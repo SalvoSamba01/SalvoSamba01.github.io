@@ -296,14 +296,23 @@ let initTheme = () => {
 
   setThemeSetting(themeSetting);
 
-  // Add event listener to the theme toggle button.
-  document.addEventListener("DOMContentLoaded", function () {
+  // Add event listener to the theme toggle button
+  // Use a function to handle the listener registration safely at any time
+  let registerToggleListener = () => {
     const mode_toggle = document.getElementById("light-toggle");
+    if (mode_toggle) {
+      mode_toggle.addEventListener("click", function () {
+        toggleThemeSetting();
+      });
+    }
+  };
 
-    mode_toggle.addEventListener("click", function () {
-      toggleThemeSetting();
-    });
-  });
+  // If DOM is already ready, register immediately; otherwise wait for DOMContentLoaded
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", registerToggleListener);
+  } else {
+    registerToggleListener();
+  }
 
   // Add event listener to the system theme preference change.
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({ matches }) => {

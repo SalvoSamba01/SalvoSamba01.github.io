@@ -157,6 +157,8 @@
       {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
+    {% elsif entry.type == 'misc' and entry.journal %}
+      {% capture entrytype %}<em>In {{ entry.journal }}</em>{% endcapture %}
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
@@ -184,7 +186,7 @@
       {{ periodical | strip }}
     </div>
     <div class="periodical">
-      {{ entry.note | strip }}
+      <span class="note-highlight">{{ entry.note | strip }}</span>
     </div>
 
     <!-- Links/Buttons -->

@@ -1037,7 +1037,7 @@ To enable the calendar on your page, add `calendar: true` to the frontmatter:
 ```yaml
 ---
 layout: page
-title: teaching
+title: academic activities
 calendar: true
 ---
 ```

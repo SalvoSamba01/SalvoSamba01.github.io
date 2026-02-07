@@ -74,13 +74,19 @@ layout: default
               {% if cv.label %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Professional Title</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.label }}</td>
+                  <td class="p-1 pl-2 font-weight-light">{{ cv.label | markdownify | remove: '<p>' | remove: '</p>' }}</td>
                 </tr>
               {% endif %}
               {% if cv.email %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
                   <td class="p-1 pl-2 font-weight-light">{{ cv.email }}</td>
+                </tr>
+              {% endif %}
+              {% if cv.alternative_email %}
+                <tr>
+                  <td class="p-1 pr-2 font-weight-bold"><b>Alternative Email</b></td>
+                  <td class="p-1 pl-2 font-weight-light">{{ cv.alternative_email }}</td>
                 </tr>
               {% endif %}
               {% if cv.phone %}
