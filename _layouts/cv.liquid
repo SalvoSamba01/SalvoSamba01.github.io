@@ -17,20 +17,15 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {{ page.title }}
-      {% if page.cv_pdf %}
+      <span class="float-right">
+        <span style="font-size: 0.4em; font-weight: bold;">Request detailed CV</span>
         <a
-          {% if page.cv_pdf contains '://' %}
-            href="{{ page.cv_pdf }}"
-          {% else %}
-            href="{{ page.cv_pdf | relative_url }}"
-          {% endif %}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="float-right"
+          href="mailto:salvatore.sambataro@phd.unict.it?subject=[Your Name/Company] - Request for detailed CV&body=Hi Salvatore,%0A%0AI'm [...], and I am contacting you regarding [...].%0A%0AI would be grateful if you could kindly share a copy of your CV for [...].%0A%0AThank you in advance for your time and availability.%0A%0AKind regards,"
+          title="Request CV via email"
         >
-          <i class="fa-solid fa-file-pdf"></i>
+          <i class="fa-solid fa-envelope" style="font-size: 0.8em;"></i>
         </a>
-      {% endif %}
+      </span>
     </h1>
     {% if page.description %}
       <p class="post-description">{{ page.description }}</p>
