@@ -64,14 +64,22 @@ cv:
 
 
     Awards:
+      - title: Premio Archimede XXII ed. 2026 (Master Degree)
+        authors: []
+        date: 2026
+        url: https://web.dmi.unict.it/it/notizie/premio-archimede-2026
+        awarder: Department of Mathematics and Computer Science, University of Catania
+        summary: "The 'Premio Archimede' award is awarded annually by the Department of Mathematics and Computer Science, University of Catania, to the Master graduate in Computer Science who has achieved excellent results during their academic career and in their final thesis work (Academic Year 2024-25)."
+
       - title: Premio Archimede XX ed. 2024 (Bachelor Degree)
         authors: []
         date: 2024
+        url: https://www.unictmagazine.unict.it/premio-archimede-assegnato-ai-neo-dottori-sambataro-e-bonaventura
         awarder: Department of Mathematics and Computer Science, University of Catania
         summary: "The 'Premio Archimede' award is awarded annually by the Department of Mathematics and Computer Science, University of Catania, to the Bachelor graduate in Computer Science who have achieved excellent results during their academic career and in their final thesis work."
 
     Publications:
-      - title: "SynthForensics: A Multi-Generator Benchmark for Detecting Synthetic Video Deepfakes"
+      - title: "SynthForensics: Benchmarking and Evaluating People-Centric Synthetic Video Deepfakes"
         authors:
           - "Roberto Leotta"
           - "Salvatore Alfio Sambataro"
@@ -81,10 +89,27 @@ cv:
           - "Francesco Guarnera"
           - "Luca Guarnera"
           - "Sebastiano Battiato"
-        publisher: arXiv Preprint
-        releaseDate: 2026-02-07
+        publisher: "Advances in Neural Information Processing Systems (NeurIPS 2026), Evaluations & Datasets Track - Poster"
+        releaseDate: 2026-12
         url: https://arxiv.org/abs/2602.04939
-        summary: "A comprehensive benchmark for detecting purely synthetic video deepfakes created by text-to-video models. The benchmark comprises 6,815 unique videos from five state-of-the-art open-source T2V generators, with human-in-the-loop validation and multiple compression versions. Experiments demonstrate limitations of current detectors with mean performance drops of 29.19% AUC, while proposing methods to achieve 93.81% AUC for unseen generators."
+        summary: "A people-centric benchmark for detecting synthetic video deepfakes: 20,445 videos from 8 text-to-video and 7 image-to-video open-source generators, paired with FF++/DFD real sources, two-stage human-validated and released in four compression versions with full metadata. Human raters prefer SynthForensics in 71-77% of head-to-head comparisons against nine existing synthetic-video benchmarks. Across 15 detectors and three protocols, face-based methods drop 13-55 AUC points (mean 27) from FF++ to SynthForensics, and a further 23 points under aggressive compression. Joint first authorship."
+
+      - title: "Adversarial Attacks on Deepfake Detectors: A Challenge in the Era of AI-Generated Media"
+        authors:
+          - "Francesco Guarnera"
+          - "Luca Guarnera"
+          - "Andrea Montibeller"
+          - "Salvatore Alfio Sambataro"
+          - "Dario Samuele Pishvai"
+          - "Ludovica Beritelli"
+          - "Giovanni Puglisi"
+          - "Zahid Akhtar"
+          - "Giulia Boato"
+          - "Sebastiano Battiato"
+        publisher: "Proceedings of the 34th ACM International Conference on Multimedia (ACM MM 2026)"
+        releaseDate: 2026-11
+        url: https://doi.org/10.1145/3767308.3837702
+        summary: "AADD-2026, a competitive benchmark for evaluating adversarial attacks against deepfake detectors under realistic deployment conditions: synthetic images from five generative families, social-media-inspired processing, JPEG and JPEG-AI compression, and eight heterogeneous detectors. Ten teams submitted valid solutions; results show that accounting for compression and post-processing substantially improves transferability to unseen detectors, while DINOv2- and SigLIP2-based detectors are markedly more resilient."
 
     Languages:
       - name: Italian
