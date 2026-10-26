@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: false # do not include news on the home page
+  enabled: true # include news on the home page
   scrollable: true # keeps option but disabled
   limit: 5 # leave blank to include all the news in the `_news` folder
 

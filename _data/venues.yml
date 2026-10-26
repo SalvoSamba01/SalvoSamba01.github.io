@@ -7,3 +7,10 @@
 
 "Vision":
   color: "#009f36"
+
+"NeurIPS":
+  url: https://neurips.cc/Conferences/2026
+  color: "#7b2d8e"
+
+"ACM MM":
+  color: "#0055a4"
