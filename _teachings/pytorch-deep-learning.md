@@ -24,4 +24,3 @@ This module is an integral part of the Deep Learning course in the Master's degr
 - **Practical Implementation**: Image classification, sequence modeling, and transfer learning
 - **Debugging and Optimization**: Performance profiling, mixed precision training, and distributed computing
 - **Real-world Applications**: Computer vision, natural language processing, and generative models
-

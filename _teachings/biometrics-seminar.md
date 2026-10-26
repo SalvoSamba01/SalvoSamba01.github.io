@@ -23,4 +23,3 @@ This seminar is part of the Biometrics course in the Bachelor's degree program i
 - **Fingerprint Processing**: Enhancement, feature extraction, and quality assessment
 - **Applications**: Criminal justice, civil identification, access control, and mobile authentication
 - **Security and Privacy**: Biometric data protection and regulatory considerations
-

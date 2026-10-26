@@ -6,10 +6,9 @@ title: Salvatore Sambataro
 first_name: Salvatore
 middle_name: Alfio
 last_name: Sambataro
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note: ""
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  ""
+  PhD student in Artificial Intelligence at the University of Catania, working on deepfake detection, synthetic media forensics and video understanding.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: unict, computer vision, deepfakes, pytorch # add your own keywords or leave empty
@@ -88,8 +87,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: "" # blog_name will be displayed in your blog page
+blog_description: ""
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -306,7 +305,7 @@ enable_publication_badges:
   altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
   dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
   google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
+  inspirehep: false # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
