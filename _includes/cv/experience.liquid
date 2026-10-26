@@ -19,9 +19,12 @@
 
           {% if start_date != '' %}
             {% comment %} Extract year only from dates like "1933-01-01" or just use "1933" as is {% endcomment %}
-            {% assign startDate = start_date | split: '-' | first %}
-            {% assign endDate = end_date | split: '-' | first | default: 'Present' %}
+            {% assign startDate = start_date | strip | split: '-' | first %}
+            {% assign endDate = end_date | strip | split: '-' | first | default: 'Present' %}
             {% assign date = startDate | append: ' - ' | append: endDate %}
+            {% if startDate == endDate %}
+              {% assign date = startDate %}
+            {% endif %}
           {% else %}
             {% assign date = '' %}
           {% endif %}

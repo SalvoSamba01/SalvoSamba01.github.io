@@ -1,6 +1,6 @@
 cv:
   name: Salvatore Alfio Sambataro
-  headline: "PhD Student @ [University of Catania](https://www.unict.it/) & AI Researcher @ [iCTLab s.r.l.](https://www.ictlab.srl/)"
+  headline: "PhD Student @ [University of Catania](https://www.unict.it/) & AI Engineer & Researcher @ [iCTLab s.r.l.](https://www.ictlab.srl/)"
   email:
     - salvatore.sambataro@phd.unict.it
     - salvosambataro2001@gmail.com
@@ -51,19 +51,19 @@ cv:
 
     Experience:
       - company: iCTLab s.r.l.
-        position: AI Researcher
+        position: AI Engineer & Researcher
         location: Catania, Italy
-        start_date: 2025
+        start_date: "2025-11"
         end_date: present
         summary: "I work on both client-oriented AI projects and internal research initiatives within the AI team. My responsibilities include applying state-of-the-art machine learning and AI models to real-world use cases, designing custom modeling solutions, exploring different modeling strategies, prototyping innovative methods, and managing the full experimentation lifecycle. My work spans diverse domains (e.g., automotive), allowing me to apply AI and machine learning to real-world challenges."
         highlights: []
 
-      - company: IIS Benedetto Radice
-        position: High School Computer Science Teacher (B016 – Computer Science Laboratory)
-        location: Bronte (CT), Italy
-        start_date: 2023
-        end_date: 2025
-        summary: "Appointed to a teaching position after successfully passing the 2020 National Public Competitive Examination for Secondary School Teaching (Concorso Ordinario). Taught Computer Science and laboratory courses, including programming, algorithms, and IT fundamentals, to upper-secondary students. Developed curricula, lesson plans, and practical lab exercises in line with national standards. Supervised student projects and promoted computational thinking, problem-solving, and hands-on technical skills."
+      - company: iCTLab s.r.l.
+        position: Internship
+        location: Catania, Italy
+        start_date: "2025-01"
+        end_date: "2025-06"
+        summary: "Master's thesis internship: research on image and video generation algorithms."
         highlights: []
 
     Awards:
