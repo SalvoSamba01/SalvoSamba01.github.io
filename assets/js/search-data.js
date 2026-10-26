@@ -398,16 +398,17 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-memo-the-first-version-of-synthforensics-a-human-centric-benchmark-for-detecting-synthetic-video-deepfakes-is-now-available-on-arxiv",
+          title: ':memo: The first version of SynthForensics, a human-centric benchmark for detecting synthetic video...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-arrows-counterclockwise-major-update-of-synthforensics-on-arxiv-now-20-445-videos-from-8-t2v-and-7-i2v-generators-a-human-preference-study-and-15-evaluated-detectors",
+          title: ':arrows_counterclockwise: Major update of SynthForensics on arXiv: now 20,445 videos from 8 T2V...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-page-facing-up-our-challenge-paper-adversarial-attacks-on-deepfake-detectors-a-challenge-in-the-era-of-ai-generated-media-aadd-2026-has-been-accepted-at-acm-multimedia-2026-in-rio-de-janeiro-challenge",
+          title: ':page_facing_up: Our challenge paper Adversarial Attacks on Deepfake Detectors: A Challenge in the...',
+          description: "",
+          section: "News",},{id: "news-tada-our-paper-synthforensics-benchmarking-and-evaluating-people-centric-synthetic-video-deepfakes-has-been-accepted-as-a-poster-at-the-neurips-2026-evaluations-amp-amp-datasets-track-arxiv",
+          title: ':tada: Our paper SynthForensics: Benchmarking and Evaluating People-Centric Synthetic Video Deepfakes has been...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
