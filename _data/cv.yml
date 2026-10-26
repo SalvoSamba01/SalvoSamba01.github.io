@@ -1,10 +1,9 @@
 cv:
   name: Salvatore Alfio Sambataro
-  label: "PhD Student @ [University of Catania](https://www.unict.it/) & AI Researcher @ [iCTLab s.r.l.](https://www.ictlab.srl/)"
-  email: salvatore.sambataro@phd.unict.it
-  alternative_email: salvosambataro2001@gmail.com
-  image: ""
-  summary: "I am a PhD student in Artificial Intelligence and Computer Vision at the University of Catania, with a strong focus on synthetic media forensics and deepfake detection. Currently, I work at iCTLab s.r.l., an AI research lab, where I combine academic research with practical applications in machine learning and AI. My research interests include the development of robust detection systems for generative models and synthetic content, with emphasis on real-world applications and generalization across different domains."
+  headline: "PhD Student @ [University of Catania](https://www.unict.it/) & AI Researcher @ [iCTLab s.r.l.](https://www.ictlab.srl/)"
+  email:
+    - salvatore.sambataro@phd.unict.it
+    - salvosambataro2001@gmail.com
 
   social_networks:
     - network: GitHub
@@ -13,12 +12,16 @@ cv:
       username: salvatore-alfio-sambataro
 
   sections:
+    Summary:
+      - "I am a PhD student in Artificial Intelligence and Computer Vision at the University of Catania, with a strong focus on synthetic media forensics and deepfake detection. Currently, I work at iCTLab s.r.l., an AI research lab, where I combine academic research with practical applications in machine learning and AI. My research interests include the development of robust detection systems for generative models and synthetic content, with emphasis on real-world applications and generalization across different domains."
+
     Education:
       - institution: University of Catania
         location: Catania, Italy
         url: https://www.unict.it/
         area: Artificial Intelligence
         studyType: PhD
+        degree: PhD
         start_date: 2025
         end_date: present
         score: ""
@@ -29,6 +32,7 @@ cv:
         url: https://www.unict.it/
         area: Computer Science (Laurea Magistrale)
         studyType: Master Degree
+        degree: MSc
         start_date: 2023
         end_date: 2025
         score: "110 cum laude"
@@ -39,6 +43,7 @@ cv:
         url: https://www.unict.it/
         area: Computer Science (Laurea Triennale)
         studyType: Bachelor Degree
+        degree: BSc
         start_date: 2020
         end_date: 2023
         score: "110 cum laude"
@@ -87,8 +92,8 @@ cv:
           - "Francesco Guarnera"
           - "Luca Guarnera"
           - "Sebastiano Battiato"
-        publisher: "Advances in Neural Information Processing Systems (NeurIPS 2026), Evaluations & Datasets Track - Poster"
-        releaseDate: 2026-12
+        journal: "Advances in Neural Information Processing Systems (NeurIPS 2026), Evaluations & Datasets Track - Poster"
+        date: 2026-12
         url: https://arxiv.org/abs/2602.04939
         summary: "A people-centric benchmark for detecting synthetic video deepfakes: 20,445 videos from 8 text-to-video and 7 image-to-video open-source generators, paired with FF++/DFD real sources, two-stage human-validated and released in four compression versions with full metadata. Human raters prefer SynthForensics in 71-77% of head-to-head comparisons against nine existing synthetic-video benchmarks. Across 15 detectors and three protocols, face-based methods drop 13-55 AUC points (mean 27) from FF++ to SynthForensics, and a further 23 points under aggressive compression. Joint first authorship."
 
@@ -104,8 +109,8 @@ cv:
           - "Zahid Akhtar"
           - "Giulia Boato"
           - "Sebastiano Battiato"
-        publisher: "Proceedings of the 34th ACM International Conference on Multimedia (ACM MM 2026)"
-        releaseDate: 2026-11
+        journal: "Proceedings of the 34th ACM International Conference on Multimedia (ACM MM 2026)"
+        date: 2026-11
         url: https://doi.org/10.1145/3767308.3837702
         summary: "AADD-2026, a competitive benchmark for evaluating adversarial attacks against deepfake detectors under realistic deployment conditions: synthetic images from five generative families, social-media-inspired processing, JPEG and JPEG-AI compression, and eight heterogeneous detectors. Ten teams submitted valid solutions; results show that accounting for compression and post-processing substantially improves transferability to unseen detectors, while DINOv2- and SigLIP2-based detectors are markedly more resilient."
 

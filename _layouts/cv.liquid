@@ -54,9 +54,18 @@ layout: default
       {% if render_rendercv and site.data.cv and site.data.cv.cv %}
         {% comment %} RenderCV format {% endcomment %}
         {% assign cv = site.data.cv.cv %}
+        {% comment %} RenderCV >= 2 names: headline (was label), email list (was email + alternative_email), Summary section (was summary) {% endcomment %}
+        {% assign cv_title = cv.headline | default: cv.label %}
+        {% assign cv_alt_email = cv.alternative_email %}
+        {% assign cv_email = cv.email %}
+        {% if cv.email.first %}
+          {% assign cv_email = cv.email[0] %}
+          {% assign cv_alt_email = cv.email[1] %}
+        {% endif %}
+        {% assign cv_summary = cv.summary | default: cv.sections.Summary[0] %}
 
         <!-- Header/Contact Information -->
-        {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
+        {% if cv.name or cv_title or cv.location or cv.email or cv.phone or cv.website %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Contact Information</h3>
             <table class="table table-cv table-sm table-borderless">
@@ -66,22 +75,22 @@ layout: default
                   <td class="p-1 pl-2 font-weight-light">{{ cv.name }}</td>
                 </tr>
               {% endif %}
-              {% if cv.label %}
+              {% if cv_title %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Professional Title</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.label | markdownify | remove: '<p>' | remove: '</p>' }}</td>
+                  <td class="p-1 pl-2 font-weight-light">{{ cv_title | markdownify | remove: '<p>' | remove: '</p>' }}</td>
                 </tr>
               {% endif %}
-              {% if cv.email %}
+              {% if cv_email %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.email }}</td>
+                  <td class="p-1 pl-2 font-weight-light">{{ cv_email }}</td>
                 </tr>
               {% endif %}
-              {% if cv.alternative_email %}
+              {% if cv_alt_email %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Alternative Email</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.alternative_email }}</td>
+                  <td class="p-1 pl-2 font-weight-light">{{ cv_alt_email }}</td>
                 </tr>
               {% endif %}
               {% if cv.phone %}
@@ -114,10 +123,10 @@ layout: default
         {% endif %}
 
         <!-- Summary -->
-        {% if cv.summary %}
+        {% if cv_summary %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Professional Summary</h3>
-            <p>{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            <p>{{ cv_summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           </div>
         {% endif %}
 
@@ -144,7 +153,7 @@ layout: default
           {% assign section_entries = section_pair[1] %}
 
           {% comment %} Skip Experience and Volunteer as we've already processed them combined {% endcomment %}
-          {% if section_title == 'Experience' or section_title == 'Volunteer' %}
+          {% if section_title == 'Experience' or section_title == 'Volunteer' or section_title == 'Summary' %}
             {% continue %}
           {% endif %}
 
