@@ -57,6 +57,14 @@
       {% if site.max_author_limit and author_array_size > site.max_author_limit %}
         {% assign author_array_limit = site.max_author_limit %}
       {% endif %}
+      {% if entry.max_author_limit %}
+        {% assign entry_author_limit = entry.max_author_limit | plus: 0 %}
+        {% if author_array_size > entry_author_limit %}
+          {% assign author_array_limit = entry_author_limit %}
+        {% else %}
+          {% assign author_array_limit = author_array_size %}
+        {% endif %}
+      {% endif %}
 
       {%- for author in entry.author_array limit: author_array_limit -%}
         {% assign author_is_self = false %}
